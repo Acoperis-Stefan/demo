@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Barlow', sans-serif;
+    --font-display: 'Barlow Condensed', sans-serif;
+
+    --background: 0 0% 100%;
+    --foreground: 220 10% 10%;
+    --card: 0 0% 98%;
+    --card-foreground: 220 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+    --primary: 0 55% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 220 10% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 220 5% 40%;
+    --accent: 0 55% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 0 55% 38%;
+    --chart-1: 0 55% 38%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 10% 10%;
+    --sidebar-primary: 0 55% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 220 10% 10%;
+    --sidebar-border: 220 10% 90%;
+    --sidebar-ring: 0 55% 38%;
+  }
+
+  .dark {
+    --background: 0 0% 100%;
+    --foreground: 220 10% 10%;
+    --card: 0 0% 98%;
+    --card-foreground: 220 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+    --primary: 0 55% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 220 10% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 220 5% 40%;
+    --accent: 0 55% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 0 55% 38%;
+    --chart-1: 0 55% 38%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 55% 38%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 10% 10%;
+    --sidebar-primary: 0 55% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 220 10% 10%;
+    --sidebar-border: 220 10% 90%;
+    --sidebar-ring: 0 55% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    border-radius: 0 !important;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 100%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 55%, 38%);
+}
+
+/* WhatsApp button keeps circular shape */
+.whatsapp-btn {
+  border-radius: 9999px !important;
+}
